@@ -3,7 +3,7 @@ import pandas
 import datetime
 from bs4 import BeautifulSoup
 
-keyword = input('Keyword: ')
+keyword = input('Keyword: ').replace(' ', '+')
 time = datetime.datetime.now().strftime('%I%M%p%d%B')
 filename = f'./{keyword}{time}.csv'
 
